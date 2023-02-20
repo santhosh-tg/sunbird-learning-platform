@@ -1137,6 +1137,16 @@ csp-migrator:
         assessment_table = "question_data"
     }
 
+    cloud_storage {
+      folder {
+        content = "content"
+        artifact = "artifact"
+      }
+    }
+
+    gdrive.application_name="{{ gdrive_application_name }}"
+    g_service_acct_cred="{{ auto_creator_g_service_acct_cred }}"
+
     questionset.hierarchy.keyspace="{{ questionset_hierarchy_keyspace_name }}"
     questionset.hierarchy.table="questionset_hierarchy"
 
@@ -1158,8 +1168,8 @@ csp-migrator:
 
     neo4j_fields_to_migrate = {
         "asset": ["artifactUrl", "thumbnail", "downloadUrl","variants"],
-        "content": ["appIcon", "artifactUrl", "posterImage", "previewUrl", "thumbnail", "assetsMap", "certTemplate", "itemSetPreviewUrl", "grayScaleAppIcon", "sourceURL", "variants", "downloadUrl","streamingUrl"],
-        "contentimage": ["appIcon", "artifactUrl", "posterImage", "previewUrl", "thumbnail", "assetsMap", "certTemplate", "itemSetPreviewUrl", "grayScaleAppIcon", "sourceURL", "variants", "downloadUrl","streamingUrl"],
+        "content": ["appIcon", "artifactUrl", "posterImage", "previewUrl", "thumbnail", "assetsMap", "certTemplate", "itemSetPreviewUrl", "grayScaleAppIcon", "sourceURL", "variants", "downloadUrl","streamingUrl","transcripts"],
+        "contentimage": ["appIcon", "artifactUrl", "posterImage", "previewUrl", "thumbnail", "assetsMap", "certTemplate", "itemSetPreviewUrl", "grayScaleAppIcon", "sourceURL", "variants", "downloadUrl","streamingUrl","transcripts"],
         "collection": ["appIcon", "artifactUrl", "posterImage", "previewUrl", "thumbnail", "toc_url", "grayScaleAppIcon", "variants", "downloadUrl"],
         "collectionimage": ["appIcon", "artifactUrl", "posterImage", "previewUrl", "thumbnail", "toc_url", "grayScaleAppIcon", "variants", "downloadUrl"],
         "plugins": ["artifactUrl"],
