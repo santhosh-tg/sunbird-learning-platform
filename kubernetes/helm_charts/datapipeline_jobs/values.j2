@@ -258,25 +258,6 @@ video-stream-generator:
         protocol="Hls"
       }
     }
-{% if cloud_service_provider == "oci" %}
-    #OCI Elemental Media Convert Config
-    oci {
-      region="{{oci_media_region}}"
-      compartment_id="{{oci_media_compartment}}"
-      namespace="{{oci_media_namespace}}"
-      bucket {
-        content_bucket_name="{{oci_media_source_bucket}}"
-        processed_bucket_name="{{oci_media_target_bucket}}"
-      }
-      stream {
-        prefix_input="{{oci_media_prefix_input}}"
-        distribution_channel_id="{{oci_media_dist_channel_id}}"
-        work_flow_id="{{ oci_media_work_flow_id }}"
-        stream_package_config_id="{{oci_media_stream_config_id}}"
-        gateway_domain="{{oci_media_gateway_domain}}"
-      }
-    }
-{% endif %}
 
   flink-conf: |+
     jobmanager.memory.flink.size: {{ flink_job_names['video-stream-generator'].jobmanager_memory }}
