@@ -180,7 +180,7 @@ post-publish-processor:
       relative_path_prefix={{ cloudstorage_relative_path_prefix_content }}
       metadata.list={{ cloudstorage_metadata_list }}
       read_base_path="{{ cloudstorage_base_path }}"
-      write_base_path={{ valid_cloudstorage_base_urls }}
+      write_base_path="{{ valid_cloudstorage_base_urls }}"
     }
 
   flink-conf: |+
@@ -352,7 +352,7 @@ asset-enrichment:
       relative_path_prefix={{ cloudstorage_relative_path_prefix_content }}
       metadata.list={{ cloudstorage_metadata_list }}
       read_base_path="{{ cloudstorage_base_path }}"
-      write_base_path={{ valid_cloudstorage_base_urls }}
+      write_base_path="{{ valid_cloudstorage_base_urls }}"
     }
 
   flink-conf: |+
@@ -471,7 +471,7 @@ content-auto-creator:
       relative_path_prefix={{ cloudstorage_relative_path_prefix_content }}
       metadata.list={{ cloudstorage_metadata_list }}
       read_base_path="{{ cloudstorage_base_path }}"
-      write_base_path={{ valid_cloudstorage_base_urls }}
+      write_base_path="{{ valid_cloudstorage_base_urls }}"
     }
 
     content_auto_creator {
@@ -768,7 +768,7 @@ content-publish:
       relative_path_prefix={{ cloudstorage_relative_path_prefix_content }}
       metadata.list={{ cloudstorage_metadata_list }}
       read_base_path="{{ cloudstorage_base_path }}"
-      write_base_path={{ valid_cloudstorage_base_urls }}
+      write_base_path="{{ valid_cloudstorage_base_urls }}"
     }
 
     master.category.validation.enabled ="{{ master_category_validation_enabled }}"
@@ -812,7 +812,7 @@ qrcode-image-generator:
       relative_path_prefix={{ cloudstorage_relative_path_prefix_dial }}
       metadata.list={{ cloudstorage_metadata_list }}
       read_base_path="{{ cloudstorage_base_path }}"
-      write_base_path={{ valid_cloudstorage_base_urls }}
+      write_base_path="{{ valid_cloudstorage_base_urls }}"
     }
 
     cloud_storage_type="{{ cloud_service_provider }}"
@@ -1046,7 +1046,7 @@ live-node-publisher:
       relative_path_prefix={{ cloudstorage_relative_path_prefix_content }}
       metadata.list={{ cloudstorage_metadata_list }}
       read_base_path="{{ cloudstorage_base_path }}"
-      write_base_path={{ valid_cloudstorage_base_urls }}
+      write_base_path="{{ valid_cloudstorage_base_urls }}"
     }
 
   flink-conf: |+
@@ -1226,7 +1226,7 @@ csp-migrator:
       relative_path_prefix={{ cloudstorage_relative_path_prefix_content }}
       metadata.list={{ cloudstorage_metadata_list }}
       read_base_path="{{ cloudstorage_base_path }}"
-      write_base_path={{ valid_cloudstorage_base_urls }}
+      write_base_path="{{ valid_cloudstorage_base_urls }}"
     }
 
     migrationVersion = 1
@@ -1276,7 +1276,7 @@ cassandra-data-migration:
       relative_path_prefix={{ cloudstorage_relative_path_prefix_content }}
       metadata.list={{ cloudstorage_metadata_list }}
       read_base_path="{{ cloudstorage_base_path }}"
-      write_base_path={{ valid_cloudstorage_base_urls }}
+      write_base_path="{{ valid_cloudstorage_base_urls }}"
     }
 
   flink-conf: |+
